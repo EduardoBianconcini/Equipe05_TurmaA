@@ -1,0 +1,16 @@
+svg {
+    .circunferencia_horas {
+        stroke: black;
+        stroke-width: 16;
+        fill: none;
+        stroke-dasharray: 400 100;
+        stroke-dashoffset: 325;
+        stroke-linecap: round;
+      }
+      
+      .circunferencia_horas_texto {
+        text-anchor: middle;
+        font-size: 15px;
+
+      }
+}

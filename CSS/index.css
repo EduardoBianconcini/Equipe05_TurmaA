@@ -1,16 +1,81 @@
-svg {
-    .circunferencia_horas {
-        stroke: black;
-        stroke-width: 16;
-        fill: none;
-        stroke-dasharray: 400 100;
-        stroke-dashoffset: 325;
-        stroke-linecap: round;
-      }
-      
-      .circunferencia_horas_texto {
-        text-anchor: middle;
-        font-size: 15px;
-
-      }
+header {
+    display: flex;
+    margin: 2px;
 }
+
+.ola {
+    margin: 2px 150px 2px 2px;
+        font: times;
+        font-weight: bold;  
+}
+
+.pesquisar {
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+main {
+    display: flex;
+    margin: 2px;
+
+    h2 {
+        font: times;
+        position: relative;
+        margin: 5px 34.8px 5px 34.8px;
+    }
+    
+
+    svg {
+        position: relative;
+        margin-left: 85px;
+        margin-right: 85px;
+
+        .circunferencia_horas {
+            stroke: rgb(0, 0, 0);
+            stroke-width: 16;
+            fill: none;
+            stroke-dasharray: 400 100;
+            stroke-dashoffset: 325;
+            stroke-linecap: round;
+    
+          }
+        
+        .circunferencia_40 {
+            stroke: rgb(241, 249, 1);
+            stroke-width: 16;
+            fill: none;
+            stroke-dasharray: 400 100;
+            stroke-dashoffset: 325;
+            stroke-linecap: round;
+        }
+
+        .circunferencia_30 {
+            stroke: rgb(0, 0, 0);
+            stroke-width: 16;
+            fill: none;
+            stroke-dasharray: 400 100;
+            stroke-dashoffset: 325;
+            stroke-linecap: round;
+        }
+
+        .circunferencia_20 {
+            stroke: rgb(0, 0, 0);
+            stroke-width: 16;
+            fill: none;
+            stroke-dasharray: 400 100;
+            stroke-dashoffset: 325;
+            stroke-linecap: round;
+        }
+
+          
+        .circunferencia_horas_texto {
+            text-anchor: middle;
+            font: times;
+            font-size: 20px;
+    
+          }
+    }
+}
+
+
+

@@ -10,28 +10,33 @@ header {
 }
 
 .pesquisar {
-    margin-right: 2px;
+    margin-right: 0px;
     margin-top: 15px;
 }
 
 main {
     display: flex;
+    justify-content: center; /* sempre para o x */
+    align-items: center; /* sempre para o y */
+    flex-direction: column;
     margin: 2px;
+    gap: 20px;
 
     h2 {
         font: times;
         position: relative;
-        margin: 5px 34.8px 5px 34.8px;
+        text-align: center;
     }
     
 
     svg {
-        position: relative;
-        margin-left: 85px;
-        margin-right: 85px;
-        
+        width: 30%;               
+        height: auto;             
+        display: block;
+        margin: 0 auto;
 
         #circunferencia_horas {
+
             stroke: rgb(251, 0, 0); 
             stroke-width: 16;
             fill: none;
@@ -66,8 +71,6 @@ main {
             stroke-dashoffset: 320;   
             stroke-linecap: round;
         }
-        
-
           
         .circunferencia_horas_texto {
             text-anchor: middle;
@@ -76,6 +79,8 @@ main {
     
           }
     }
+
+
 }
 
 

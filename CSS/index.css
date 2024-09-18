@@ -13,6 +13,8 @@ html {
 
 body {
     width: 100%;
+    background-color:rgb(5, 67, 34)
+    /* rgb(3, 56, 28) */
 }
 
 .ola {
@@ -20,6 +22,7 @@ body {
     font: times;
     font-size: 30px;
     font-weight: bold;  
+    color: whitesmoke;
 }
 
 .pesquisar {
@@ -44,6 +47,7 @@ h2 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 3%;
+    color: whitesmoke
 }
 
 svg {
@@ -94,6 +98,7 @@ svg {
     text-anchor: middle;
     font: times;
     font-size: 20px;
+    fill:whitesmoke;
 }
 
 ul {
@@ -132,7 +137,33 @@ li {
     justify-content: left;
 }
 
+.caixinhas {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 20px 0 0 0;
+    gap: 10px; 
+}
 
+.caixinhas a {
+    text-decoration: none;
+    color: whitesmoke; 
 
+    display: block; 
+    width: 48%; 
+    padding: 20px; 
+    margin: 10px ; 
+    
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.700); 
+    background-color: rgba(255, 255, 255, 0.041); 
+    border: 1px solid rgba(255, 255, 255, 0.012); 
+    border-radius: 15px; 
 
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+a:hover {
+    transform: translateY(-6px) scale(1.05); 
+}
 

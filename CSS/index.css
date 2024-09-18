@@ -18,7 +18,7 @@ body {
 }
 
 .ola {
-    margin: 0%;
+    margin: 1% 0% 0% 1%;
     font: times;
     font-size: 30px;
     font-weight: bold;  
@@ -135,6 +135,7 @@ li {
 #artigos_relevantes {
     display: flex;
     justify-content: left;
+    margin-left: 1%;
 }
 
 .caixinhas {

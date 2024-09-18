@@ -27,7 +27,15 @@ body {
 
 .pesquisar {
     margin-left: auto;             
-    margin-top: 1%;              
+    margin: 1%;
+    width: 40px; /* Defina a largura do contêiner do link */
+    height: 40px; /* Defina a altura do contêiner */
+    display: inline-block;
+}
+
+#lupa {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção original da imagem */
 }
 
 main {

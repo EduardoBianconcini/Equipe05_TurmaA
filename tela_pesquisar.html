@@ -1,63 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="CSS/pesquisar.css">
 </head>
 <body>
     <header>
-        <img src="lupa.png" alt="icone_pesquisar">
-        <p>Pesquisar</p>
-        <img src="microfone.png" alt="icone microfone">
+        <ul class="linha">
+            <li><img src="icone_pesquisar.png" alt="l" id="pesquisa_pesquisar"></li>
+            <li><h3 id="pesquisa_pesquisar">Pesquisar...</h3></li>
+            <li><img src="icone_microfone.png" alt="m" id="microfone_pesquisar"></li>
+        </ul>
     </header>
     <main>
         <section>
-            <h2>Temas</h2>
+            <h2>Pesquisa por temas</h2>
+            <section class="primeiro">
+                <ul class="linha">
+                    <li><a href="tela_neurologia.html">Neurologia</a></li>
+                    <li><a href="tela_epidemologia.html">Epidemologia</a></li>
+                    <li><a href="tela_imunologia.html">tela_imunologia</a></li>
+                </ul>
+            </section>
+            <section class="segundo">
+                <ul class="linha">
+                    <li><a href="tela_ortopedia.html">Ortopedia</a></li>
+                    <li><a href="tela_pediatria.html">Pediatria</a></li>
+                    <li><a href="tela_psicologia.html">Psicologia</a></li>
+                </ul>
+            </section>
         </section>
-        
-        <article>
-            <a href="tela_neurologia.html">
-                <h3>Neurologia</h3>
-                <img src="neurologia.png" alt="icone_neurologia"> <!--Falta a foto da neuro-->
-            </a>
-        </article>
-        <article>
-            <a href="tela_epidemologia.html">
-                <h3>Epidemologia</h3>
-                <img src="epidemologia.png" alt="icone epidemologia"> <!--Falta a foto da epidemologia-->
-            </a>
-        </article>
-        <article>
-            <a href="tela_sistema_cardiovascular.html">
-                <h3>Sistema Cardiovascular</h3>
-                <img src="sistema_cardiovascular.png" alt="icone sistema cardiovascular"> <!-- Falta a foto do sist cardio-->
-            </a>
-        </article>
-        <article>
-            <a href="tela_ortopedia.html">
-                <h3>Ortopedia</h3>
-                <img src="ortopedia.png" alt="icone ortopedia"> <!-- Falta a foto da ortopedia-->
-            </a>
-        </article>
-        <article>
-            <a href="tela_imunologia.html">
-                <h3>
-                    Imunologia
-                </h3>
-                <img src="imunologia.png" alt="icone imunologia"> <!--Falta a foto da imunologia-->
-            </a>
-        </article>
-        <article>
-            <a href="tela_sistema_respiratorio.html">
-                <h3>
-                    Sistema Respiratório
-                </h3>
-                <img src="sistema_respiratorio.png" alt="icone sistema respiratorio">
-            </a>
-        </article>
-
     </main>
-    
 </body>
 </html>

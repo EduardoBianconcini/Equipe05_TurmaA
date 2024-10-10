@@ -17,6 +17,12 @@ body {
     /* rgb(3, 56, 28) */
 }
 
+.linha  {
+    position: relative ;
+    display: flex;
+    flex-direction: row;
+}
+
 .ola {
     margin: 1% 0% 0% 1%;
     font: times;
@@ -25,23 +31,24 @@ body {
     color: whitesmoke;
 }
 
-.pesquisar {
-    margin-left: auto;             
+.pesquisar {            
     margin: 1%;
-    width: 40px; /* Defina a largura do contêiner do link */
-    height: 40px; /* Defina a altura do contêiner */
+    width: 40px; 
+    height: 40px; 
     display: inline-block;
 }
 
 #lupa {
-    width: 100%; /* A imagem ocupa toda a largura do contêiner */
-    height: auto; /* Mantém a proporção original da imagem */
+    width: 10%; 
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
 }
 
 main {
     display: flex;
-    justify-content: center; /* sempre para o x */
-    align-items: center; /* sempre para o y */
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column;
     margin: 2px;
     gap: 20px;
@@ -61,7 +68,7 @@ h2 {
 svg {
     width: 30%;               
     height: auto;             
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 

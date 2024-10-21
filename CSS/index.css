@@ -24,17 +24,17 @@ body {
 }
 
 .ola {
-    margin: 1% 0% 0% 1%;
-    font-size: 2rem;
+    margin: .5rem 0 0 .5rem;
+    font-size: 1.8rem;
     font-weight: bold;  
     color: snow;
 }
 
 .pesquisar {            
     margin: 1%;
-    width: 1rem; 
-    height: 1rem; 
-    display: inline-block;
+    width: .3rem; 
+    height: 1.8rem; 
+    display: flex;
 }
 
 #lupa {
@@ -54,17 +54,17 @@ main {
 }
 
 h2 {
-    font-size: 23px;
+    font-size: 1.3rem;
     font-weight: bold;
     position: relative;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
     color: snow;
 }
 
 svg {
-    width: 30%;               
+    width: 12rem;               
     height: auto;             
     display: flex;
     margin: 0 auto;
@@ -109,7 +109,7 @@ svg {
     
 .circunferencia_horas_texto {
     text-anchor: middle;
-    font-size: 20px;
+    font-size: 1.3rem;
     fill: snow;
 }
 
@@ -117,11 +117,12 @@ ul {
     display: flex;               
     justify-content: space-between;
     padding: 0;                
-    margin: 3% 0 0 0;   
+    margin: .5rem 0 0 .7rem;   
 }
 
 li {
-    margin-right: 3%;         
+    margin-right: 3%; 
+    font-size: .8rem;        
 }
 
 #psicologia {
@@ -147,7 +148,7 @@ li {
 #artigos_relevantes {
     display: flex;
     justify-content: left;
-    margin-left: 1%;
+    margin-left: 1rem;
 }
 
 .caixinhas {
@@ -156,6 +157,8 @@ li {
     align-items: center;
     margin: 1rem 0 0 0;
     gap: 1rem; 
+    font-size: .8rem;
+    text-align: center;
 }
 
 .caixinhas a {
@@ -163,7 +166,8 @@ li {
     color: snow; 
 
     display: block; 
-    width: 48%; 
+    width: 68%; 
+    height: 3rem;
     padding: 1rem; 
     margin: 5% ; 
     

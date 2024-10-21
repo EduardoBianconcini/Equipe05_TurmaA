@@ -25,10 +25,9 @@ body {
 
 .ola {
     margin: 1% 0% 0% 1%;
-    font: times;
     font-size: 2rem;
     font-weight: bold;  
-    color: whitesmoke;
+    color: snow;
 }
 
 .pesquisar {            
@@ -61,7 +60,7 @@ h2 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 3%;
-    color: whitesmoke
+    color: snow;
 }
 
 svg {
@@ -111,7 +110,7 @@ svg {
 .circunferencia_horas_texto {
     text-anchor: middle;
     font-size: 20px;
-    fill:whitesmoke;
+    fill: snow;
 }
 
 ul {
@@ -161,7 +160,7 @@ li {
 
 .caixinhas a {
     text-decoration: none;
-    color: whitesmoke; 
+    color: snow; 
 
     display: block; 
     width: 48%; 

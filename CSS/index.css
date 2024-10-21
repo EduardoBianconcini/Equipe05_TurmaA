@@ -25,7 +25,6 @@ body {
 
 .ola {
     margin: 1% 0% 0% 1%;
-    font: times;
     font-size: 30px;
     font-weight: bold;  
     color: whitesmoke;
@@ -55,7 +54,6 @@ main {
 }
 
 h2 {
-    font: times;
     font-size: 23px;
     font-weight: bold;
     position: relative;
@@ -111,7 +109,6 @@ svg {
     
 .circunferencia_horas_texto {
     text-anchor: middle;
-    font: times;
     font-size: 20px;
     fill:whitesmoke;
 }
@@ -183,3 +180,27 @@ a:hover {
     transform: translateY(-6px) scale(1.05); 
 }
 
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  

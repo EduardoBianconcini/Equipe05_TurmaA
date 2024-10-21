@@ -25,15 +25,16 @@ body {
 
 .ola {
     margin: 1% 0% 0% 1%;
-    font-size: 30px;
+    font: times;
+    font-size: 2rem;
     font-weight: bold;  
     color: whitesmoke;
 }
 
 .pesquisar {            
     margin: 1%;
-    width: 40px; 
-    height: 40px; 
+    width: 1rem; 
+    height: 1rem; 
     display: inline-block;
 }
 
@@ -50,7 +51,7 @@ main {
     align-items: center; 
     flex-direction: column;
     margin: 2px;
-    gap: 20px;
+    gap: 1rem;
 }
 
 h2 {
@@ -154,8 +155,8 @@ li {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    margin: 20px 0 0 0;
-    gap: 10px; 
+    margin: 1rem 0 0 0;
+    gap: 1rem; 
 }
 
 .caixinhas a {
@@ -164,7 +165,7 @@ li {
 
     display: block; 
     width: 48%; 
-    padding: 20px; 
+    padding: 1rem; 
     margin: 5% ; 
     
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.700); 

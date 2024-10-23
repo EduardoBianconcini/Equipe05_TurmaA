@@ -50,7 +50,7 @@ body {
   }
   
 header  {
-    margin-left: 2rem;
+    margin-left: 4rem;
     margin-right: 2rem;
 }
 header ul {
@@ -62,6 +62,13 @@ header ul {
     height: 2rem;
     border: 1px solid snow;
     border-radius: 1rem;
+}
+
+#menu_pesquisar {
+    position: fixed;
+    width: 2.5rem;
+    left: 0.5rem;
+    top: .7rem;
 }
 
 #pesquisa_pesquisar {
@@ -82,6 +89,7 @@ header ul {
 main    {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 main ul    {
@@ -92,6 +100,19 @@ main h2 {
     text-align: center;
     font-size: 1.8rem;
     color: snow;
+}
+
+.principal  {
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiro   {
+    display: flex;
+}
+
+.primeiro p {
+    margin: 0;
 }
 
 .primeiro li  {

@@ -49,7 +49,7 @@ body {
 header {
     display: fixed;         
     width: 100%; 
-    height: 3.5rem;                 
+    height: 3rem;                 
 }
 
 header a img    {
@@ -63,7 +63,7 @@ main    {
 }
 .primeiro h2  {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .primeiro p  {
@@ -73,13 +73,9 @@ main    {
 
 .segundo h2 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-top: 1rem;
 
-}
-
-.terceiro img    {
-    width: 2.5rem;
 }
 
 .terceiro   {
@@ -89,3 +85,35 @@ main    {
 
 }
 
+.terceiro img    {
+    width: 3rem;
+}
+
+.terceiro ul li p   {
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    margin-left: 1.5rem;
+}
+
+.quarto {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid snow;
+    border-radius: 20px;
+}
+
+.quarto ul img  {
+    width: 2.5rem;
+}
+
+.quarto ul h3   {
+    margin-top: .8rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.quarto ul p    {
+    padding-left: 1rem;
+    padding-bottom: .6rem;
+}

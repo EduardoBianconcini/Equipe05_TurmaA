@@ -47,6 +47,11 @@ header ul {
 
 }
 
+main    {
+    display: flex;
+    justify-content: center;
+}
+
 main ul    {
     text-align: center;
 }
@@ -61,6 +66,10 @@ main h2 {
     margin: 1rem;
     height: 5rem;
     width: 8rem;
+}
+
+.primeiro ul    {
+    /* padding: 0; */
 }
 
 .primeiro img  {

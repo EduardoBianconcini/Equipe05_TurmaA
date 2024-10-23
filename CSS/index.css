@@ -79,8 +79,9 @@ body {
 
 #lupa {
     width: 2rem; 
+    height: 2.5rem;
     position: absolute;
-    right: .1rem;
+    right: .7rem;
     top: .1rem;
 }
 

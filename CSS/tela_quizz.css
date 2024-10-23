@@ -40,6 +40,12 @@ body {
     font-style: normal;
   }
 
+.linha  {
+    position: relative ;
+    display: flex;
+    flex-direction: row;
+}
+
 header {
     display: fixed;         
     width: 100%; 
@@ -48,8 +54,8 @@ header {
 
 header a img    {
     position: absolute;
-    width: 2rem;
-    right: .5rem;
+    width: 2.5rem;
+    left: .5rem;
     top: .5rem;
 }
 main    {
@@ -70,6 +76,10 @@ main    {
     font-size: 1.3rem;
     margin-top: 1rem;
 
+}
+
+.terceiro img    {
+    width: 2.5rem;
 }
 
 .terceiro   {

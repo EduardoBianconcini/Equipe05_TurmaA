@@ -191,6 +191,29 @@ li {
     justify-content: center;
 }
 
+.QUIZZ  {
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: 2rem 1.5rem 1rem 1.5rem;
+
+}
+
+.QUIZZ a    {
+    display: block;
+    text-decoration: none;
+    border-radius: 15px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.700); 
+    background-color: rgba(255, 255, 255, 0.041); 
+    border: 1px solid rgba(255, 255, 255, 0.012); 
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.QUIZZ a:hover {
+    transform: translateY(-6px) scale(1.05); 
+}
+
 .caixinhas {
     display: flex; 
     justify-content: space-between; 

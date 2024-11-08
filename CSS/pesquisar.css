@@ -67,9 +67,9 @@ header ul {
 
 #menu_pesquisar {
     position: fixed;
-    width: 2.5rem;
-    left: 0.5rem;
-    top: .7rem;
+    width: 2rem;
+    left: 0.7rem;
+    top: 1rem;
 }
 
 #pesquisa_pesquisar {
@@ -80,9 +80,9 @@ header ul {
 
 #microfone_pesquisar {
     position: absolute;
-    width: 2rem;
-    height: 1.7rem;
-    top: .2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: .3rem;
     right: .4rem;
 
 }

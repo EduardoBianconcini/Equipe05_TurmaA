@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="JS/index.js"></script>
     </head>
     <body>
@@ -27,18 +28,9 @@
                 <h2>
                     Você leu 20 artigos esse mês
                 </h2>
-                <svg viewBox="0 0 180 180">
-                    <circle id="circunferencia_horas" cx="50%" cy="50%" r="80"></circle>
-                    <circle id="circunferencia_30" cx="50%" cy="50%" r="80"></circle> 
-                    <circle id="circunferencia_40" cx="50%" cy="50%" r="80"></circle>
-                    <circle id="circunferencia_20" cx="50%" cy="50%" r="80"></circle>
 
-                    <text x="50%" y="50%" class="circunferencia_horas_texto">
-                        5 Horas lidas
-                    </text>
-                </svg>
-
-
+                <div class="ajuda"><canvas id="grafico" width="200" height="200"></canvas></div>
+   
                 <ul class="linha">
                     <li> <a href="tela_psicologia.html"  id="psicologia">Psicologia (40%)</a></li>
                     <li> <a href="tela_imunologia.html"  id="imunologia">Imunologia (30%)</a></li>

@@ -104,56 +104,6 @@ h2 {
     color: snow;
 }
 
-svg {
-    width: 12rem;               
-    height: auto;             
-    display: flex;
-    margin: 0 auto;
-}
-
-#circunferencia_horas {
-
-    stroke: rgb(251, 0, 0); 
-    stroke-width: 16;
-    fill: none;
-    stroke-dasharray: 400 90; 
-    stroke-dashoffset: 325;    
-    stroke-linecap: round;     
-}
-
-#circunferencia_30 {
-    stroke: rgb(223, 230, 22); 
-    stroke-width: 16;
-    fill: none;
-    stroke-dasharray: 290 200;
-    stroke-dashoffset: 313;   
-    stroke-linecap: round;
-}
-
-#circunferencia_40 {
-    stroke: rgb(30, 143, 208); 
-    stroke-width: 16;
-    fill: none;
-    stroke-dasharray: 400 270;
-    stroke-dashoffset: 340;   
-    stroke-linecap: round;
-}
-
-#circunferencia_20 {
-    stroke: rgb(30, 255, 0); 
-    stroke-width: 16;
-    fill: none;
-    stroke-dasharray: 400 420;
-    stroke-dashoffset: 320;   
-    stroke-linecap: round;
-}
-    
-.circunferencia_horas_texto {
-    text-anchor: middle;
-    font-size: 1.3rem;
-    fill: snow;
-}
-
 ul {
     display: flex;               
     justify-content: space-between;
@@ -245,4 +195,11 @@ li {
 
 .caixinhas a:hover {
     transform: translateY(-6px) scale(1.05); 
+}
+
+.ajuda    {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
 }

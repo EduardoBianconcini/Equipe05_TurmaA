@@ -86,9 +86,17 @@ header {
 
 #menu   {
   position: absolute;
-  width: 3rem;
-  left: .7rem;
+  width: 2.5rem;
+  left: 4.5rem;
   top: .7rem ;
+}
+
+#back {
+  position: absolute;
+  width: 3rem;
+  top: .7rem;
+  left: .7rem;
+  height: 2.5rem;
 }
 
 #lupa   {

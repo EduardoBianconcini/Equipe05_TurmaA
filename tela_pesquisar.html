@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa</title>
     <link rel="stylesheet" href="reset.css">
+
+
     <link rel="stylesheet" href="CSS/pesquisar.css">
-    <script src="JS/pesquisar.js"></script>
 </head>
 <body class="merriweather-sans">
     <header class="linha">
@@ -56,18 +57,22 @@
         </section>
     </main>
     <script>
-        document.getElementById('search-form').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            query = document.getElementById('search-input').value.trim();
-            if (query) {
-                localStorage.setItem('searchQuery', query);
-                window.location.href = 'resultado_pesquisa_resistenciacafe.html';
-            } else {
-                alert('Por favor, insira um termo para pesquisar.');
-            }
-        });
-    </script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('search-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var query = document.getElementById('search-input').value.trim();
+                if (query) {
 
+                    localStorage.setItem('searchQuery', query);
+                    console.log('Termo de pesquisa armazenado:', query); 
+
+                    window.location.href = 'resultado_pesquisa_resistenciacafe2.html';
+                } else {
+                    alert('Por favor, insira um termo para pesquisar.');
+                }
+            });
+        }); 
+    </script>
 </body>
 </html>
 

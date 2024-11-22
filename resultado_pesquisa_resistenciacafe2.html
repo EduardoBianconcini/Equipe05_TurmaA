@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/tela_pesquisa.css">
+    <title>Document</title>
+</head>
+<body class = 'tinos-bold'>
+    <header>
+        <p class = 'pesquisa'>Pesquisa</p>
+    </header>
+    <main class = 'pesquisados'>
+        <section class = 'artigo'>
+            <h2 class = 'titulo'>
+                Titulo 1
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quis totam nulla. Itaque, officiis voluptatum placeat temporibus possimus nulla? Quo fugiat voluptas debitis aperiam provident laborum doloribus laboriosam quisquam architecto.
+            </p>
+            <h3 class="conf">
+                Grau de Confiabillidade A+ <!-- mudar talvez de volta-->
+            </h3>
+        </section>
+        <section class = 'artigo'>
+            <h2 class = 'titulo'>
+                Titulo 2
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quis totam nulla. Itaque, officiis voluptatum placeat temporibus possimus nulla? Quo fugiat voluptas debitis aperiam provident laborum doloribus laboriosam quisquam architecto.
+            </p>
+            <h3 class="conf">
+                Grau de Confiabillidade A <!-- mudar talvez de volta-->
+            </h3>
+        </section>
+        <section class = 'artigo'>
+            <h2 class = 'titulo'>
+                Titulo 3
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quis totam nulla. Itaque, officiis voluptatum placeat temporibus possimus nulla? Quo fugiat voluptas debitis aperiam provident laborum doloribus laboriosam quisquam architecto.
+            </p>
+            <h3 class="conf">
+                Grau de Confiabillidade B+ <!-- mudar talvez de volta-->
+            </h3>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var query = localStorage.getItem('searchQuery');
+            console.log('Termo de pesquisa recuperado:', query);
+
+            if (query) {
+                document.querySelector('.pesquisa').textContent = 'Pesquisa: ' + query;
+
+                var artigos = [
+                    {
+                        titulo: 'Efeitos do Café na Saúde Humana',
+                        confiabilidade: 'A+',
+                        conteudo: 'Lorem ipsum dolor sit amet consectetur...'
+                    },
+                    {
+                        titulo: 'Cafeína e o Desempenho Cognitivo',
+                        confiabilidade: 'A',
+                        conteudo: 'Lorem ipsum dolor sit amet consectetur...'
+                    },
+                    {
+                        titulo: 'Impacto do Consumo de Café no Sono',
+                        confiabilidade: 'B+',
+                        conteudo: 'Lorem ipsum dolor sit amet consectetur...'
+                    }
+
+                ];
+
+                var resultados = artigos.filter(function(artigo) {
+                    return artigo.titulo.toLowerCase().includes(query.toLowerCase());
+                });
+
+                var container = document.querySelector('.pesquisados');
+
+                container.innerHTML = '';
+
+                if (resultados.length > 0) {
+                    resultados.forEach(function(artigo) {
+                        var section = document.createElement('section');
+                        section.classList.add('artigo');
+
+                        var h2 = document.createElement('h2');
+                        h2.classList.add('titulo');
+                        h2.textContent = artigo.titulo;
+
+                        var p = document.createElement('p');
+                        p.textContent = artigo.conteudo;
+
+                        var h3 = document.createElement('h3');
+                        h3.classList.add('conf');
+                        h3.textContent = 'Grau de Confiabilidade ' + artigo.confiabilidade;
+
+                        section.appendChild(h2);
+                        section.appendChild(p);
+                        section.appendChild(h3);
+
+                        container.appendChild(section);
+                    });
+                } else {
+                    var noResults = document.createElement('p');
+                    noResults.textContent = 'Nenhum artigo encontrado para "' + query + '".';
+                    container.appendChild(noResults);
+                }
+            } else {
+                alert('Nenhum termo de pesquisa fornecido.');
+                window.location.href = 'pesquisar.html'; 
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -47,5 +47,71 @@
             </h3>
         </section>
     </main>
+    <script>
+        query = localStorage.getItem('searchQuery');
+
+        if (query) {
+
+            document.querySelector('.pesquisa').textContent = 'Pesquisa: ' + query;
+
+            var artigos = [
+                {
+                    titulo: 'Efeitos do Café na Saúde Humana',
+                    confiabilidade: 'A+',
+                    conteudo: 'Lorem ipsum dolor sit amet consectetur...'
+                },
+                {
+                    titulo: 'Cafeína e o Desempenho Cognitivo',
+                    confiabilidade: 'A',
+                    conteudo: 'Lorem ipsum dolor sit amet consectetur...'
+                },
+                {
+                    titulo: 'Impacto do Consumo de Café no Sono',
+                    confiabilidade: 'B+',
+                    conteudo: 'Lorem ipsum dolor sit amet consectetur...'
+                }
+
+            ];
+
+            var resultados = artigos.filter(function(artigo) {
+                return artigo.titulo.toLowerCase().includes(query.toLowerCase());
+            });
+
+            var container = document.querySelector('.pesquisados');
+
+            container.innerHTML = '';
+
+            if (resultados.length > 0) {
+                resultados.forEach(function(artigo) {
+                    section = document.createElement('section');
+                    section.classList.add('artigo');
+
+                    h2 = document.createElement('h2');
+                    h2.classList.add('titulo');
+                    h2.textContent = artigo.titulo;
+
+                    p = document.createElement('p');
+                    p.textContent = artigo.conteudo;
+
+                    h3 = document.createElement('h3');
+                    h3.classList.add('conf');
+                    h3.textContent = 'Grau de Confiabilidade ' + artigo.confiabilidade;
+
+                    section.appendChild(h2);
+                    section.appendChild(p);
+                    section.appendChild(h3);
+
+                    container.appendChild(section);
+                });
+            } else {
+                noResults = document.createElement('p');
+                noResults.textContent = 'Nenhum artigo encontrado para "' + query + '".';
+                container.appendChild(noResults);
+            }
+        } else {
+            alert('Nenhum termo de pesquisa fornecido.');
+            window.location.href = 'index.html'; 
+        }
+    </script>
 </body>
 </html>

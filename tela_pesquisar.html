@@ -10,12 +10,17 @@
 <body class="merriweather-sans">
     <header class="linha">
         <a href="index.html"><img src="img/home.png" alt="menu" id="menu_pesquisar"></a>
-        <ul class="linha">
-            <li><img src="img/lupa.png" alt="l" id="pesquisa_pesquisar"></li>
-            <li><h3 id="pesquisa_pesquisar">Pesquisar...</h3></li>
-            <li><img src="img/microphone.png" alt="m" id="microfone_pesquisar"></li>
-        </ul>
+        <form id="search-form" class="linha">
+            <input type="text" id="search-input" placeholder="Pesquisar..." />
+            <button type="submit" id="botao_pesquisa">
+                <img src="img/lupa.png" alt="Pesquisar" />
+            </button>
+            <button type="button" id="botao_voz">
+                <img src="img/microphone.png" alt="Microfone" />
+            </button>
+        </form>
     </header>
+    
     <main>
         <section class="principal">
             <h2>Pesquisa por temas</h2>
@@ -49,6 +54,19 @@
             </section>
         </section>
     </main>
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            query = document.getElementById('search-input').value.trim();
+            if (query) {
+                localStorage.setItem('searchQuery', query);
+                window.location.href = 'resultado_pesquisa_resistenciacafe.html';
+            } else {
+                alert('Por favor, insira um termo para pesquisar.');
+            }
+        });
+    </script>
+
 </body>
 </html>
 

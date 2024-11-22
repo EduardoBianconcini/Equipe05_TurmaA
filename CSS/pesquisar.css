@@ -131,4 +131,61 @@ main ul    {
     text-decoration: none;
 }
 
+#search-form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
 
+#search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #888;
+}
+
+#botao_pesquisa, #botao_voz {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#botao_pesquisa img, #botao_voz img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Outros estilos */
+main {
+    color: snow;
+    margin: 1rem;
+}
+
+.pesquisados {
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.artigo {
+    margin-top: 2rem;
+}
+
+.pesquisa {
+    margin-left: 1rem;
+}
+
+.titulo {
+    color: rgb(30, 143, 208);
+}
+
+.conf {
+    color: rgb(223, 230, 22);
+}

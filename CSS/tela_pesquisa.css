@@ -39,6 +39,12 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+.linha {
+display: flex;
+align-items: center;
+}
+
 main    {
     color: snow;
     margin: 1rem;

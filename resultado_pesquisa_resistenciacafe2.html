@@ -48,13 +48,13 @@
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var query = localStorage.getItem('searchQuery');
+            query = localStorage.getItem('searchQuery');
             console.log('Termo de pesquisa recuperado:', query);
 
             if (query) {
                 document.querySelector('.pesquisa').textContent = 'Pesquisa: ' + query;
 
-                var artigos = [
+                artigos = [
                     {
                         titulo: 'Efeitos do Café na Saúde Humana',
                         confiabilidade: 'A+',
@@ -73,11 +73,11 @@
 
                 ];
 
-                var resultados = artigos.filter(function(artigo) {
+                resultados = artigos.filter(function(artigo) {
                     return artigo.titulo.toLowerCase().includes(query.toLowerCase());
                 });
 
-                var container = document.querySelector('.pesquisados');
+                container = document.querySelector('.pesquisados');
 
                 container.innerHTML = '';
 
@@ -86,14 +86,14 @@
                         var section = document.createElement('section');
                         section.classList.add('artigo');
 
-                        var h2 = document.createElement('h2');
+                        h2 = document.createElement('h2');
                         h2.classList.add('titulo');
                         h2.textContent = artigo.titulo;
 
-                        var p = document.createElement('p');
+                        p = document.createElement('p');
                         p.textContent = artigo.conteudo;
 
-                        var h3 = document.createElement('h3');
+                        h3 = document.createElement('h3');
                         h3.classList.add('conf');
                         h3.textContent = 'Grau de Confiabilidade ' + artigo.confiabilidade;
 
@@ -104,7 +104,7 @@
                         container.appendChild(section);
                     });
                 } else {
-                    var noResults = document.createElement('p');
+                    noResults = document.createElement('p');
                     noResults.textContent = 'Nenhum artigo encontrado para "' + query + '".';
                     container.appendChild(noResults);
                 }
